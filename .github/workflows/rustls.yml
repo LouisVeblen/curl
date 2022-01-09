@@ -32,7 +32,7 @@ jobs:
        git clone --depth=1 --recursive https://github.com/rustls/rustls-ffi.git -b v0.8.2
        curl https://sh.rustup.rs -sSf | sh -s -- -y
        source $HOME/.cargo/env
-       cd $HOME/rustls-ffi
+       cd rustls-ffi
        make
        make DESTDIR=$HOME/rustls install
 
